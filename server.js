@@ -1,6 +1,6 @@
 const express = require('express');
 const routes = require('./routes');
-
+const { Sequelize } = require('sequelize');
 // import sequelize connection
 const sequelize = new Sequelize({
   dialect: 'sqlite',
@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(routes);
-
+sequelize.close()
 // sync sequelize models to the database, then turn on the server
 sequelize.sync({ force: true })
 
