@@ -2,9 +2,20 @@ const express = require('express');
 const routes = require('./routes');
 const { Sequelize } = require('sequelize');
 // import sequelize connection
-const sequelize = new Sequelize({
-  dialect: 'sqlite',
-  storage: 'path/to/database.sqlite'
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'andrewahler@gmail.com',
+  password : 'Vandy2021!'
+});
+ 
+connection.connect(function(err) {
+  if (err) {
+    console.error('error connecting: ' + err.stack);
+    return;
+  }
+ 
+  console.log('connected as id ' + connection.threadId);
 });
 const app = express();
 const PORT = process.env.PORT || 3001;
