@@ -4,7 +4,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 // The `/api/products` endpoint
 
 // get all products
-router.get('/', (req, res) => {
+router.get('/', (_req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
   Product.findAll({include: [Category,{
@@ -72,7 +72,7 @@ router.put('/:id', (req, res) => {
       id: req.params.id,
     },
   })
-    .then((product) => {
+    .then((_product) => {
       // find all associated tag from ProductTag
       return ProductTag.findAll({ where: { product_id: req.params.id } });
     })
