@@ -51,6 +51,6 @@ const productTagData = [
   },
 ];
 
-const seedProductTags = () => ProductTag.bulkCreate(productTagData);
+const seedProductTag = () => ProductTag.bulkCreate(productTagData);
 
-module.exports = seedProductTags;
+module.exports = seedProductTag;
