@@ -6,7 +6,7 @@ This is a backend database application illustrating Object-Relational Mapping.
 
 #### Links
 https://dashboard.heroku.com/apps/week13project
-Video- 
+Video- https://github.com/andrewahler/e-commerce/blob/main/week%2013%20video.mp4
 
 ##### Author
 Andrew Ahler
