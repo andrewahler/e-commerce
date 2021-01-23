@@ -1,8 +1,7 @@
 # E-commerce Back End Starter Code
 ## Description
 This is a backend database application illustrating Object-Relational Mapping.
-![image](https://user-images.githubusercontent.com/71769640/104854145-aaf8c400-58ca-11eb-812e-60d76f881d8e.png)
-
+![image](https://user-images.githubusercontent.com/71769640/105611710-6c588300-5d7c-11eb-8a44-602c13a36398.png)
 
 #### Links
 https://dashboard.heroku.com/apps/week13project
