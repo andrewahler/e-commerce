@@ -25,8 +25,10 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+  console.log(req.body)
+  var dat = "TESTDATA"
   // create a new category
-  Category.create(req.body)
+  Category.create(dat)
   .then((categories) =>{
     console.log("postroute",categories)
     res.json(categories)
